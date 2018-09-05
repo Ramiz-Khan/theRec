@@ -1,0 +1,51 @@
+<ion-view view-title="Maps" >
+
+  <ion-content scroll="false" >
+    <div data-ng-show="mapsCtrl.showAutoPlaces">
+      <label class="item item-input">
+        <input  id="geocomplete" name="geocomplete"  type="text" class="form-control" placeholder="Enter Location" autocomplete="off"
+           places-auto-complete=""  on-place-changed="placeChanged(place)"  data-ng-model="mapsCtrl.geoname" disable-tap>
+
+      </label>
+    </div>
+
+
+      <div id="maps-lazy-container" map-lazy-load="http://maps.google.com/maps/api/js" data-tap-disabled="true">
+        <map style="width:100%;height:100%;"
+           default-style="false" id="search-map"  scrollwheel="false"
+           navigation-control="true"    pan-control="false" map-type-control="false" scale-control="false"
+           styles=" [ { 'stylers': [ { 'hue': '#0B3A5F' }, { 'gamma': 1 } ] } ]"
+           mapTypeId="google.maps.MapTypeId.ROADMAP">
+
+        </map>
+      </div>
+      <div class="overlap" data-ng-show="!mapsCtrl.showAutoPlaces" data-ng-init="active='food'">
+
+        <div class="overlap-item" ng-click="active='food';mapsCtrl.showNearbyPlaces('food')"  ng-class="{'positive-bg':active==='food'}"><i class="icon  ion-fork"></i></div>
+
+        <div class="overlap-item" ng-click="active='shops';mapsCtrl.showNearbyPlaces('shops')" ng-class="{'positive-bg':active==='shops'}"><i class=" icon ion-bag"></i></div>
+
+
+
+      </div>
+
+
+
+
+
+  </ion-content>
+  <ion-tabs class="tabs-royal tabs-icon-top ">
+
+    <ion-tab on-select="mapsCtrl.tabSelected('auto')"  title="Auto Places" icon-on="ion-ios-location" icon-off="ion-ios-location-outline">
+      <!-- Tab 1 content -->
+    </ion-tab>
+
+    <ion-tab on-select="mapsCtrl.tabSelected('nearby')"  title="Nearby Places" icon-on="ion-ios-eye" icon-off="ion-ios-eye-outline">
+      <!-- Tab 2 content -->
+    </ion-tab>
+
+
+  </ion-tabs>
+
+
+</ion-view>

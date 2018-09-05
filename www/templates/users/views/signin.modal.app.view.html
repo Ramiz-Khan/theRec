@@ -1,0 +1,41 @@
+ <ion-modal-view class="plus-bg">
+    <ion-header-bar class="bar plus-bg" align-title="center">
+      <h1 class="title">Login</h1>
+      <button class="button button-clear " ng-click="loginCtrl.closeLoginModal()">	<i class="icon ion-close"></i></button>
+
+    </ion-header-bar>
+    <ion-content>
+      <div class="login-modal-content">
+          <div class="login-input-padding">
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Username/Email</span>
+                <input type="text" ng-model="credentials.email" placeholder="Username/Email">
+            </label>
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Password</span>
+                <input type="password" ng-model="credentials.password" placeholder="Password">
+            </label>
+          </div>
+          <div class="login-button-padding">
+            <button ng-click="loginCtrl.signIn(credentials)" class="button button-block button-assertive  "> Submit</button>
+            <br>
+            <div class="text-center"> Or </div>
+            <br>
+            <div class="button-bar">
+              <button ng-click="loginCtrl.oauthSignin('facebook')" class="button button-positive button-small  ion-social-facebook  "></button>
+              <button ng-click="loginCtrl.oauthSignin('twitter')" class="button button-calm button-small ion-social-twitter  "></button>
+              <button ng-click="loginCtrl.oauthSignin('google')" class="button  button-assertive button-small ion-social-google  "></button>
+            </div>
+            <br>
+            <br>
+            <p class="assertive"><a ng-click="loginCtrl.recover()">Forgot your password?</a></p>
+
+          </div>
+
+      </div>
+
+
+    </ion-content>
+
+
+  </ion-modal-view>

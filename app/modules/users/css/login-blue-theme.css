@@ -1,0 +1,23 @@
+.login-icon {
+  color:#fff !important;
+}
+
+.login-modal-content,.login-modal-content .input-label,.login-modal-content input {
+  color:#ccc !important;
+}
+.login-modal-content input {
+  background-color:rgba(0, 0, 0, 0.26) !important;
+}
+
+.plus-bg {
+  background-color:#0B3A5F !important;
+
+}
+
+.white-bg {
+  background-color:#fff !important;
+}
+
+.login-icon-bg {
+  background-color:rgba(0, 0, 0, 0.26) !important;
+}

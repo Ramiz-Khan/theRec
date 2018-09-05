@@ -1,0 +1,26 @@
+<ion-view view-title="Friends" cache-view="false">
+    <ion-content ng-class="{expanded:friendsCtrl.isExpanded}">
+        <div class="content has-header">
+            <div class="list">
+                <a href="#/app/profile" class="item item-avatar item-icon-right " ng-repeat="person in friendsCtrl.friends track by $index" >
+                    <img ng-src="{{person.location}}">
+                    <h2>{{person.name}}</h2>
+                    <p>{{person.status}}</p>
+
+                </a>
+
+            </div>
+        </div>
+
+        <!--<div class="list content card " ng-repeat="person in friendsCtrl.friends ">
+            <div ui-sref="app.profile">
+              <div class="item item-avatar item-text-wrap "  >
+                <img ng-src="{{person.location}}">
+                <h2>{{person.name}}</h2>
+                <p>{{person.status}}</p>
+              </div>
+            </div>
+
+        </div>-->
+    </ion-content>
+</ion-view>

@@ -1,0 +1,56 @@
+#maps-lazy-container {
+  height:100% !important;
+  width:100%;
+  position:absolute;
+  z-index:1;
+}
+
+
+.overlap{
+  margin-top:10%;
+  position: relative;
+  z-index:2;
+  /*background-color:rgba(19, 91, 222, 0.82);*/
+  color:rgb(3, 1, 117);
+  width: 40px;
+  top:40px;
+  left:10px;
+  text-align:center;
+  box-shadow: 2px 2px 5px 2px rgba(0,0,0,.26);
+
+}
+.overlap-item {
+
+  width:100%;
+  height:100% !important;
+  font-size:40px;
+}
+.scroll {
+  height: 100% !important;
+}
+
+.infobox {
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    width: 270px;
+    height:100px;
+}
+
+.widget_desc {
+    padding-top: 20px;
+}
+
+.infobox .title {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.infobox .title a {
+    font-weight: bold;
+}

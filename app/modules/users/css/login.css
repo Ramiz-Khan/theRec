@@ -1,0 +1,67 @@
+
+/*
+.login-plus {
+  background-color:#673AB7;
+}*/
+.login-content {
+  padding-top:15%;
+}
+
+/*
+.login-plus {
+  background: url(../img/login.jpg) center;
+  background-size: cover;
+
+
+}*/
+
+
+
+
+.login-plus .bar {
+  padding:0;
+  border:0;
+}
+
+.login-plus .button-bar > .button {
+  padding-top:0.5%;
+}
+
+.login-icon {
+
+  box-shadow: 0px 0 2px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 50px;
+  width: 70px;
+
+
+}
+
+.login-button-padding {
+  padding-top:4%;
+  padding-right:12%;
+  padding-left:12%;
+
+}
+
+.login-input-padding {
+  padding-top:2%;
+  padding-right:12%;
+  padding-left:12%;
+}
+
+.login-modal-content .item {
+  border:0;
+
+}
+
+.login-modal-content .item-input {
+  padding-left:0;
+
+}
+
+.login-modal-content input {
+  padding-left:10px;
+  min-height:47px;
+}

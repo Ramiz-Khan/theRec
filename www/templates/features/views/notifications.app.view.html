@@ -1,0 +1,31 @@
+<ion-view view-title="Notifications">
+  <ion-content >
+    <div class="padding notification-content-padding notification">
+      <button ng-click="notificationsCtrl.initOneSignalNotification()" class="button button-block button-positive"
+      ng-if="!notificationsCtrl.enableOneSignalNotification">Init OneSignal Notification</button>
+      <div ng-if="notificationsCtrl.enableOneSignalNotification">
+        <label class="item item-input item-floating-label padding-bottom">
+          <span class="input-label">UserId</span>
+          <input type="text" ng-model="notificationsCtrl.oneSignalPayload.userId" ng-disabled="true">
+        </label>
+        <label class="item item-input item-floating-label padding-bottom">
+          <span class="input-label">PushToken</span>
+          <input type="text" ng-model="notificationsCtrl.oneSignalPayload.pushToken" ng-disabled="true">
+        </label>
+        <label class="item item-input item-floating-label padding-bottom">
+          <span class="input-label">Title</span>
+          <input type="text" ng-model="notificationsCtrl.oneSignalPayload.title" >
+        </label>
+        <label class="item item-input item-floating-label padding-bottom">
+          <span class="input-label">Content</span>
+          <input type="text" ng-model="notificationsCtrl.oneSignalPayload.content">
+        </label>
+        <button  ng-click="notificationsCtrl.sendOneSignalNotification()" class="button button-block button-balanced">Send OneSignal Notification</button>
+      </div>
+
+      <!--<button ng-disabled="true" ng-click="notificationsCtrl.sendIonicNotification()" class="button button-block button-positive">Send Ionic Notification</button>-->
+
+    </div>
+  </ion-content>
+
+</ion-view>

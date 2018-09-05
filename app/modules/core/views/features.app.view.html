@@ -1,0 +1,13 @@
+<ion-view view-title="Features" cache-view="false">
+    <ion-content >
+        <div class="content has-header">
+            <div class="list">
+                <a ui-sref="{{feature.link}}" class="item  animated slideInRight" ng-repeat="feature in featuresCtrl.features" >
+                    {{feature.name}}
+
+                </a>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

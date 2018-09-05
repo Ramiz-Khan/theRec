@@ -1,0 +1,27 @@
+<ion-modal-view class="plus-bg">
+   <ion-header-bar class="bar plus-bg" align-title="center">
+     <h1 class="title">Recover</h1>
+     <button class="button button-clear " ng-click="loginCtrl.closeRecoverModal()">	<i class="icon ion-close"></i></button>
+
+   </ion-header-bar>
+   <ion-content>
+    <div class="login-modal-content">
+      <div class="login-input-padding">
+        <span class="calm"> An email will be sent to reset the password</span>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Email</span>
+            <input type="email" ng-model="credentials.email" placeholder="Email">
+        </label>
+      </div>
+      <div class="login-button-padding">
+        <button ng-click="loginCtrl.forgot(credentials)" class="button button-block button-assertive  "> Submit</button>
+        <br>
+        
+      </div>
+    </div>
+
+
+  </ion-content>
+
+
+</ion-modal-view>

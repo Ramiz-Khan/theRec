@@ -1,0 +1,29 @@
+<ion-view view-title="Feeds" class="plus-bg">
+    <ion-content  ng-class="{expanded:activityCtrl.isExpanded}" >
+        <div class="list card " ng-repeat="feed in feedsCtrl.feeds track by $index" >
+            <div ui-sref="app.gallery">
+                <div class="item item-avatar item-text-wrap">
+                     <img ng-src="{{feed.location}}"/>
+
+                    <strong>{{feed.name}}</strong>
+                    <p> {{feed.status}}</p>
+                    <p class="card-footer">
+
+                      <span class="pull-left"><i class="icon ion-clock"></i> {{feed.time}}</span>
+                      <span class="pull-right icon-font">
+                        <i class="icon ion-chatbubbles positive "></i> {{feed.comments}}
+                        <i class="icon ion-heart assertive"></i> {{feed.likes}}
+                      </span>
+                    </p>
+
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

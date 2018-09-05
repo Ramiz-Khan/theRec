@@ -1,0 +1,13 @@
+.image-padding-top {
+  padding-top:30px;
+}
+.add-image {
+  float:left;
+  position:relative;
+}
+.image-thumb {
+  padding: 2px 2px 2px 2px;
+  height: 100px;
+  width: 100px;
+
+}

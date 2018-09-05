@@ -1,0 +1,36 @@
+<ion-view view-title="Gallery" cache-view="true">
+
+    <ion-content ng-class="{expanded:galleryCtrl.isExpanded}" >
+      <!--<a class="item item-list-detail">
+          <ion-scroll direction="x">
+            <img ng-repeat="photo in galleryCtrl.photos" ng-src="{{photo.location}}" class="image-list-thumb"/>
+          </ion-scroll>
+      </a>-->
+
+
+        <div class="list">
+            <div ui-sref="app.profile" class="card card-gallery item item-text-wrap " collection-repeat="photo in galleryCtrl.photos"   >
+                <div class="dark-bg" >
+                    <div class="padding">
+                    <h2  >{{photo.title}}</h2>
+                    <div class="pull-right">
+                      <a class="positive  padding-left">
+                          <i class="icon ion-chatbubbles icon-right"></i>
+                          {{photo.comments}}
+                      </a>
+                      <a class="assertive padding-left" >
+                          <i class="icon ion-heart icon-right"></i>
+                          {{photo.likes}}
+                      </a>
+                    </div>
+
+                  </div>
+                    <img class="full-image"  ng-src="{{photo.location}}">
+                </div>
+
+            </div>
+        </div>
+
+
+    </ion-content>
+</ion-view>

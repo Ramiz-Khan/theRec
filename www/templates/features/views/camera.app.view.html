@@ -1,0 +1,22 @@
+<ion-view view-title="Camera">
+  <ion-content >
+    <div class="padding ">
+      <div class="button-bar">
+
+        <button ng-click="cameraCtrl.getMedia(0)" class="button button-block button-positive">Take Picture</button>
+        <button ng-click="cameraCtrl.getMedia(1)" class="button button-block button-positive">Pick From Album</button>
+      </div>
+
+
+      <div class="image-padding-top"></div>
+      <div class="add-image" item-height="100" collection-repeat="photo in cameraCtrl.photos track by $index">
+        <img class="image-thumb" ng-src="{{photo}}" />
+      </div>
+
+
+
+
+    </div>
+  </ion-content>
+
+</ion-view>

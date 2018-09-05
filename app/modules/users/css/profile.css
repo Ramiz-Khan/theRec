@@ -1,0 +1,54 @@
+/*
+.profile-bg {
+  background-image: url('../img/profile-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+}*/
+
+.profile-bg {
+  background-color:#0B3A5F !important;
+}
+
+.avatar-bg {
+  background-image: url('img/avatar.jpg');
+}
+
+.avatar-icon {
+  font-size:70px;
+}
+
+.person-icon {
+  font-size:30px;
+}
+
+.hero>.content>.avatar {
+  background-position: center;
+  background-size: cover;
+  border: 1px solid rgba(255,255,255,.8);
+  border-radius: 50%;
+  display: inline-block;
+  height: 88px;
+  left: auto;
+  margin-bottom: 10px;
+  position: relative;
+  width: 88px;
+}
+.profile-follow {
+  padding:10px;
+  font-size:16px;
+}
+
+.profile-edit {
+  position:absolute;
+  top:10px;
+  right:20px;
+}
+
+.profile-content .tab-item {
+  position:relative;
+}
+
+.profile-list-padding {
+  padding-top:300px;
+}

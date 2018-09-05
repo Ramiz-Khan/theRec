@@ -1,0 +1,56 @@
+<ion-view view-title="Profile" cache-view="false" >
+
+    <ion-content class="profile-content" ng-class="{expanded:profileCtrl.isExpanded}">
+        <div class="hero profile-bg " >
+            <div class="content text-center">
+
+
+                  <i class="calm icon ion-edit profile-edit "> </i>
+                  <div class="avatar stable" >
+                    <i class="icon ion-person avatar-icon"></i>
+                  </div>
+
+                    <h3 class="calm">{{profileCtrl.user.displayName}}</h3>
+                    <p class="calm">
+                      <span class="profile-follow">
+                        <strong>{{profileCtrl.profile.followersCount}}</strong> Followers
+                      </span>
+                        |
+                      <span class="profile-follow">
+                        <strong>{{profileCtrl.profile.followingCount}} </strong>Following
+                      </span>
+                    </p>
+            </div>
+        </div>
+
+
+        <h4 class="content padding calm">Following</h4>
+
+        <div class="list ">
+            <a ui-sref="app.friends" class="item item-avatar item-icon-right " collection-repeat="person in profileCtrl.following" >
+                <img ng-src="{{person.location}}"/>
+                <h2 class="calm">{{person.name}}</h2>
+                <p class="stable">{{person.status}}</p>
+
+            </a>
+
+        </div>
+
+        <div class="profile-list-padding">
+        </div>
+
+    </ion-content>
+    <div class="tabs tabs-dark tabs-icon-top static">
+      <a ui-sref="app.friends" class="tab-item  ">
+          <i class="icon ion-android-people"></i> Friends
+      </a>
+      <a ui-sref="app.gallery" class="tab-item  ">
+          <i class="icon ion-images"></i> Gallery
+      </a>
+      <a ui-sref="app.feeds"  class="tab-item  ">
+          <i class="icon ion-calendar"></i> Feeds
+      </a>
+
+
+    </div>
+</ion-view>
